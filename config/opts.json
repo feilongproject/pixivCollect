@@ -19,6 +19,13 @@
                 "fnc": "search",
                 "describe": "在数据库中进行搜索"
             }
+        },
+        "admin": {
+            "exit": {
+                "reg": "^(exit|quit)$",
+                "fnc": "exit",
+                "describe": "退出"
+            }
         }
     }
 }
