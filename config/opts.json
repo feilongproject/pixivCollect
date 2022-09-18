@@ -1,0 +1,24 @@
+{
+    "desc": "命令总览json,按照顺序进行匹配",
+    "command": {
+        "pixiv": {
+            "search": {
+                "reg": "^(s|search)$",
+                "fnc": "search",
+                "describe": "在p站中进行搜索"
+            },
+            "login": {
+                "reg": "^(l|login)$",
+                "fnc": "login",
+                "describe": "进行登录，并储存token"
+            }
+        },
+        "database": {
+            "search": {
+                "reg": "^(sdb|searchdb)$",
+                "fnc": "search",
+                "describe": "在数据库中进行搜索"
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@ import readline from "readline";
 declare global {
     var _path: string;
     var redis: RedisClientType;
+    var picRedis: RedisClientType;
     var log: log4js.Logger;
     var rl: readline.Interface;
 
