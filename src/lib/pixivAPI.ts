@@ -80,7 +80,7 @@ export async function pixivLogin(code: string) {
     });
 }
 
-export async function pixivSearchIllust(_params: SearchParams) {
+export async function pixivSearchIllust(_params: SearchParams): Promise<PixivSearchData | null> {
 
     const params = new URLSearchParams({
         word: _params.word,
@@ -114,6 +114,7 @@ export async function pixivSearchIllust(_params: SearchParams) {
         return json;
     }).catch(err => {
         log.error(err);
+        return null;
     });
 }
 
@@ -181,7 +182,7 @@ interface PixivSearchData {
     };
 }
 
-interface PixivIllust {
+export interface PixivIllust {
     id: number;
     title: string;
     type: Type;
