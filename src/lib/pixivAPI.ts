@@ -112,9 +112,6 @@ export async function pixivSearchIllust(_params: SearchParams): Promise<PixivSea
         return res.json();
     }).then((json: PixivSearchData) => {
         return json;
-    }).catch(err => {
-        log.error(err);
-        return null;
     });
 }
 

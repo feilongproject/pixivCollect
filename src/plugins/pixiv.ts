@@ -46,7 +46,7 @@ export async function search(keywords: string[]) {
             if (data?.illusts) return data.illusts;
             return [];
         }).catch(err => {
-            log.error(err);
+            log.error(`第${t + 1}次搜索失败`, err);
             return [];
         }));
         await sleep(2000);
